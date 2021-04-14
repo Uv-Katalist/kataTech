@@ -66,7 +66,7 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: rgb(17, 17, 17);
     transform: translateX(-50%);
 }
 section .title::after{
@@ -270,29 +270,31 @@ section .title::after{
 
 /* services section styling */
 .services, .portfolio{
-    color:#fff;
-    background: #111;
+    color:#000;
+    background: #fff;
 }
 .services .title::before,
 .portfolio .title::before{
-    background: #fff;
+    background: #000;
 }
 .services .title::after,
 .portfolio .title::after{
-    background: #111;
+    background: #fff;
     content: "what i provide";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
-    background: #222;
+    background: #fff;
     text-align: center;
     border-radius: 6px;
+    box-shadow: 1px 1px 5px #cfcedf;
     padding: 35px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
     background: #070255;
+    color: #fff;
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -394,8 +396,9 @@ section .title::after{
     content: "what have done";
 }
 .portfolio .carousel .card{
-    background: #222;
+    background: #fff;
     border-radius: 6px;
+
     padding: 25px 35px;
     text-align: center;
     overflow: hidden;
@@ -403,6 +406,7 @@ section .title::after{
 }
 .portfolio .carousel .card:hover{
     background: #070255;
+    color: #fff;
 }
 .portfolio .carousel .card .box{
     display: flex;
@@ -550,9 +554,10 @@ section .title::after{
 }
 /* footer section styling */
 footer{
-    background: #cfcedf;
+    background: #fff;
     padding: 15px 23px;
     color: #000;
+    box-shadow: 0 0 5px #cfcedf;
     text-align: center;
 }
 footer span a{
@@ -560,7 +565,9 @@ footer span a{
     text-decoration: none;
 }
 footer span a:hover{
-    text-decoration: underline;
+    text-decoration: 2px underline;
+    font-weight: 700;
+    transition: all ease 3s;
 }
 
 
