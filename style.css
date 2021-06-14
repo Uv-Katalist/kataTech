@@ -392,11 +392,11 @@ section .title::after {
   width: 40%;
 }
 .skills-content .right .PS:before {
-  width: 50%;
+  width: 20%;
 }
-/*.skills-content .right .mysql::before{
-    width: 70%;
-}*/
+.skills-content .right .canva::before {
+  width: 90%;
+}
 
 /* portfolio section styling */
 .portfolio .title::after {
